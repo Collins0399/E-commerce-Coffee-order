@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        background-color:rgb(59,47,47);
+        height: 100%;
+        color:aliceblue
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin:0;
+        font-size: 16px;
+        letter-spacing:0.9px;
+      }
+      nav {
+            background-color:rgb(114,78,44);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a{
+            text-decoration: none;
+            color:aliceblue;
+        }
+        .nav a:hover{
+            text-decoration: underline;
+            color:peru;
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            font-style: italic;
+        }
+        footer{
+            text-align: center;
+            font-size:14px;
+            background-color:rgb(114,78,44);
+        }
+        .email-link {
+    color:burlywood; 
+             }
+      @media screen and (min-width: 750px) {
+        body {
+          font-size:18px;
+        }
+      }
+      a{
+        text-decoration: none;
+            color:peru;
+      }
+      a:hover{
+        text-decoration: underline;
+            color:brown;
+      }
+        </style>
+          <script src="https://kit.fontawesome.com/99c1c50972.js" crossorigin="anonymous"></script>
+          <script>
+            function validateForm() {
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const feedback = document.getElementById("feedback").value;
+                const fileInput = document.getElementById("fileUpload").value;
+    
+                if (!name || !email || !feedback || !fileInput) {
+                    alert("Please fill out all fields and upload a file.");
+                    return false;
+                }
+                alert("Thank you for your feedback and file submission!");
+                return true;
+            }
+          
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+          <nav>
+                  <h4><i>BREW HAVEN CAFE</i></h4>
+                  <a href="coffeesite.html">Home  <i class="fa-solid fa-house"></i></a>
+                  <a href="menu.html">Menu <i class="fa-solid fa-bars"></i> </a>
+                  <a href="aboutus.html">About Us <i class="fa-solid fa-info"></i> </a>
+                  <a href="contact.html">Contact <i class="fa-regular fa-address-card"></i> </a> 
+          </nav>
+        </div>
+      </div>
+    <div style="margin:0 10px">
+    <h2>Contact us</h2>
+    <p>If you have any questions or concerns, please don't hesitate to reach out to us. Our customer support team is here to help you.</p>
+    <p><strong>[Contact Information]</strong></p>
+    <p>Email<br>
+        <a href="malito:orders@brewhaven.com" class="email-link">orders@brewhavencafe.com</a>/
+        <a href="malito:info@brewhaven.com" class="email-link">info@brehavencafe.com</a><br>
+       </p>
+     <p>If you'd like to send us a message or provide feedback, please fill out the form below:</p>
+     <form onsubmit="return validateForm()" method="post" enctype="multipart/form-data" action="submit_questionnarre.php">
+      
+        <fieldset>
+            <legend>Message</legend>
+            <label>Name:</label>
+            <input type="text" id="name" name="name"></input><br><br>
+            <label>Email:</label>
+            <input type="text" id="email" name="email"></input><br><br>
+            <label>Phone number:</label>
+            <input type="number" id="Pnumber" name="Phone number"></input><br><br>
+            <label>Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+            <label for="fileUpload">Upload File:</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"><br><br>
+        
+            <input type="submit" value="Submit">
+             &nbsp; &nbsp; &nbsp;
+            <input type="reset" value="Reset">
+            </fieldset>
+     </form>
+     
+     <p>  To Check the responses to your Submissions written by the admin follow this link:
+      <a href="adminresponse_display.php"><i>Admin Responses to Submissions</i> </a>
+     </p>
+    
+     <p>Connect with us on social media through:<br>
+       <a href="" style="color:peru">Instagram</a> <br>
+       <a href="" style="color:peru"> Facebook</a> <br>
+       <a href="" style="color:peru"> Twitter </a> <br>
+     </p>
+     <p>Our customer support team is available to assist you during the following hours:<br><br>
+       <strong>Monday - Friday</strong>: 7:00 AM - 10:00 PM<br>
+        <strong>Saturday - Sunday</strong>:10:00 AM - 7:00 PM<br>
+        </p>
+    </div>
+    <footer>
+        <p>Email<br>
+         <a href="mailto:orders@brewhaven.com" class="email-link">orders@brewhavencafe.com</a>/
+         <a href="mailto:info@brewhaven.com" class="email-link">info@brehavencafe.com</a><br>
+        </p>
+        <p>
+          Coffee Orders<br>
+          Phone:+254 757772271 | +254 111212054<br>
+          Whats App: +254 706436260<br>
+         </p> 
+         <p>Cafe Shop Location<br> 
+         Phone & What's App: +254 791206518 <br>
+        </p>
+            </footer>     
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        background-color:rgb(59,47,47);
+        height: 100%;
+        color:aliceblue
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-size: 16px;
+        letter-spacing:0.9px;
+      }
+      nav {
+            background-color:rgb(114,78,44);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a{
+            text-decoration: none; 
+            color:aliceblue;
+        }
+        .nav a:hover{
+            text-decoration: underline;
+            color:peru;
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            font-style: italic;
+        }
+        .Cappuccino{
+            display: inline-block;
+            margin: 20px 30px;
+            margin-left:50px;
+        }
+        .Espresso{
+        display: inline-block;
+        margin: 20px 30px;
+        margin-left:40px;
+       }
+       .Latte{
+        display:inline-block;
+        margin: 20px 30px;
+       }
+       .Cappuccino:hover{
+            padding:1px;
+            border: 2px solid whitesmoke;
+        }
+        .Espresso:hover{
+            padding:1px;
+            border: 2px solid whitesmoke;
+        }
+        .Latte:hover{
+            padding:1px;
+            border: 2px solid whitesmoke;
+        }
+        .button1 button{
+            background-color:brown;
+            border: none;
+            color:white;
+            padding:16px;
+            text-align: center;
+            text-decoration: none;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:5px;
+            margin-left:500px;
+            width:160px;
+           
+        }
+        .button1 button:hover{
+            color:black;
+            background-color:peru;
+        }
+        .menu-table {
+            width:100%;
+            margin: 20px 0;
+            font-size: 18px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-table thead tr {
+            background-color: rgb(114, 78, 44);
+            color: aliceblue;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .menu-table th, .menu-table td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+
+        .menu-table tbody tr {
+            background-color: #fff;
+            color: rgb(59, 47, 47);
+        }
+
+        .menu-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .menu-table tbody tr:hover {
+            background-color: #f5bca9;
+            color: #000;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-table td {
+            text-align: left;
+        }
+        caption{
+            text-align: center;
+            margin-bottom: 20px;
+            color: peru;
+        }
+        footer{
+            text-align: center;
+            font-size:14px;
+            background-color:rgb(114,78,44);
+        }
+        .email-link {
+    color:burlywood; 
+             }
+      @media screen and (min-width: 750px) {
+        body {
+          font-size:18px;
+        }
+      }
+        </style>
+          <script src="https://kit.fontawesome.com/99c1c50972.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+          <nav>
+                  <h4><i>BREW HAVEN CAFE</i></h4>
+                  <a href="coffeesite.html">Home  <i class="fa-solid fa-house"></i></a>
+                  <a href="menu.html">Menu <i class="fa-solid fa-bars"></i> </a>
+                  <a href="aboutus.html">About Us <i class="fa-solid fa-info"></i> </a>
+                  <a href="contact.html">Contact <i class="fa-regular fa-address-card"></i> </a> 
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+       <h2>Our Main offers in the Menu:</h2> 
+       <div class="Cappuccino">
+        <img src="coffeesample.jpeg" style="width:300px; height:300px;">
+        <h4 style="text-align: center;">Cappuccino</h4>
+       </div>
+       <div class="Espresso">
+        <img src="Café espresso.jpeg" style="width:300px; height:300px;">
+        <h4 style="text-align: center;">Espresso</h4>
+       </div>
+       <div class="Latte">
+        <img src="Latte.jpeg" style="width:300px; height:300px;">
+        <h4 style="text-align: center;">Latte</h4>
+       </div>
+      </div>
+      <div class="button1">
+        <a href="ordercoffee.html">
+          <button>Order coffee</button>
+        </a>
+        <div><BR>
+            <table align="center" border="1" class="menu-table">
+                <caption><strong>FULL BREW HAVEN CAFE MENU:</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Rich and bold, pure espresso shot</td>
+                        <td>150Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Latte</td>
+                        <td>Espresso with steamed milk and a light foam top</td>
+                        <td>200Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>Espresso with thick foam and a touch of cocoa powder</td>
+                        <td>250Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha</td>
+                        <td>Espresso, chocolate, and steamed milk with whipped cream</td>
+                        <td>300Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Flat White</td>
+                        <td>Smooth blend of espresso and micro-foamed milk</td>
+                        <td>280Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Macchiato</td>
+                        <td>Espresso, steamed milk, vanilla, and caramel drizzle</td>
+                        <td>350Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Cinnamon:</td>
+                        <td>Blend of espresso, chocolate, and a hint of cinnamon.</td>
+                        <td>350Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Maple Almond</td>
+                        <td> Espresso, steamed milk, infused with maple syrup and almond flavor. </td>
+                        <td>400Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>English Toffee</td>
+                        <td>Rich espresso combined with sweet toffee flavor.</td>
+                        <td>400Ksh</td>
+                    </tr>
+                    <tr>
+                        <td>Salted Caramel</td>
+                        <td>A sweet and salty mix of espresso,caramel syrup and salt.</td>
+                        <td>380Ksh</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><br>
+      <footer>
+        <p>Email<br>
+         <a href="mailto:orders@brewhaven.com" class="email-link">orders@brewhavencafe.com</a>/
+         <a href="mailto:info@brewhaven.com" class="email-link">info@brehavencafe.com</a><br>
+        </p>
+        <p>
+          Coffee Orders<br>
+          Phone:+254 757772271 | +254 111212054<br>
+          Whats App: +254 706436260<br>
+         </p> 
+         <p>Cafe Shop Location<br> 
+         Phone & What's App: +254 791206518 <br>
+        </p>
+            </footer>      
+</body>
+</html>

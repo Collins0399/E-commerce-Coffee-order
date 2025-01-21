@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Cafe</title>
+    <style>
+        *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        background-color:rgb(59,47,47);
+        height: 100%;
+        color:aliceblue
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-size: 16px;
+        letter-spacing:0.9px;
+      }
+      nav {
+            background-color:rgb(114,78,44);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a{
+            text-decoration: none;
+            color:aliceblue;
+        }
+        .nav a:hover{
+            text-decoration: underline;
+            color:peru;
+        }
+        .image-container {
+          position: relative;
+          display: inline-block;
+         }
+        img{
+          height:420px;
+          display: block;
+          border-radius:5px;
+          position: relative;
+          width:100%;
+        }
+        .overlaytext {
+        position: absolute;
+        top:90%; 
+        left:50%; 
+        transform: translate(-50%, -50%); 
+        color:rgb(139, 61, 61);
+        font-size: 16px; 
+         }
+        .button1 button{
+            background-color:brown;
+            border: none;
+            color:white;
+            padding:16px;
+            text-align: center;
+            text-decoration: none;
+            font-size:16px;
+            cursor:pointer;
+            margin-top:5px;
+            width:160px;
+            flex-shrink: 0; /* Prevents shrinking of the button */
+            margin-left: 20px; 
+            margin-right:500px;
+           
+        }
+        .button1 button:hover{
+            color:black;
+            background-color:peru;
+        }
+        .button{
+          background-color:brown;
+            border: none;
+            color:white;
+            padding:16px;
+            text-align: center;
+            text-decoration: none;
+            font-size:16px;
+            cursor:pointer;
+        }
+        .button2 button:hover{
+            color:black;
+            background-color:peru;
+        }
+        .button2 button{
+            background-color:brown;
+            border: none;
+            color:white;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size:16px;
+            cursor:pointer;
+            width:160px;
+            margin-bottom:10px;
+        }
+        .order{ 
+          display: flex;
+         justify-content: space-between;
+        align-items:left;
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+       margin-top: 20px;
+       margin-left:80px;
+      }
+      .ordertext {
+        font-size: 16px;
+       margin: 0;
+        flex: 1; /* Flex-grow to allow space */
+       }
+        footer{
+            text-align: center;
+            font-size:14px;
+            background-color:rgb(114,78,44);
+        }
+        .email-link {
+    color:burlywood; 
+  }
+      @media screen and (min-width: 750px) {
+        body {
+          font-size:18px;
+        }
+      }
+    </style>
+      <script src="https://kit.fontawesome.com/99c1c50972.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="nav">
+        <nav>
+                <h4><i>BREW HAVEN CAFE</i></h4>
+                <a href="coffeesite.html">Home <i class="fa-solid fa-house"></i> </a>
+                <a href="menu.html">Menu <i class="fa-solid fa-bars"></i> </a>
+                <a href="aboutus.html">About Us <i class="fa-solid fa-info"></i> </a>
+                <a href="contact.html">Contact <i class="fa-regular fa-address-card"></i> </a> 
+        </nav>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="logo.png">
+      <div class="overlaytext">2K+ Happy Customers &nbsp;&nbsp; 20+Orders Running &nbsp;
+         10+ Coffee types &nbsp;&nbsp;
+    </div>
+    </div>
+    <div >
+      <h3 style="margin-left:80px; font-size:30px;"><i>Experience a Surreal Moment with just one sip of Coffee</i></h3>
+      <p style="text-align:center;  margin: 0 auto;">
+        <u><i>Welcome to Brew Haven</i></u>, where each sip transports you to a world of rich flavors, handpicked beans, and unforgettable moments.<br>
+              We are located in an ideal location that is only 10 minutes away from Two rivers Mall in Nairobi.We deliver your order all around<br> 
+              Nairobi county.
+      </p>
+    </div>
+    <section style="margin-left:80px; margin-top:15px;">
+      <h2><u><i>Our Menu</i></u></h2>
+      <p>Explore our signature blends and artisan brews crafted with love.</p>
+      <ul style="list-style:disc; padding:0;">
+        <li><strong>Espresso:</strong> Bold, rich, and pure</li>
+        <li><strong>Latte:</strong> Creamy, smooth, and aromatic</li>
+        <li><strong>Cappuccino:</strong> Frothy and warm with a hint of cocoa</li>
+      </ul>
+  <div class="button2">
+      <a href="menu.html">
+        <button> Full Cafe Menu</button>
+      </a>
+  </div>
+  </section>
+
+    <section>
+      <h2 style="margin-left:250px;"><i>Order Coffee:</i></h2>
+      <div class="order">
+      <p class="ordertext">Want to experience our coffee at home? Place your order now!</p>
+      <div class="button1">
+      <a href="ordercoffee.html">
+        <button>Order coffee</button>
+      </a>
+    </div>
+    </div>
+  </section>
+
+      <footer>
+      <p>Email<br>
+       <a href="maiLto:orders@brewhaven.com" class="email-link">orders@brewhavencafe.com</a>/
+       <a href="maILto:info@brewhaven.com" class="email-link">info@brehavencafe.com</a><br>
+      </p>
+      <p>
+        Coffee Orders<br>
+        Phone:+254 757772271 | +254 111212054<br>
+        Whats App: +254 706436260<br>
+       </p> 
+       <p>Cafe Shop Location<br> 
+       Phone & What's App: +254 791206518 <br>
+      </p>
+          </footer>        
+    </body>  
+</body>
+</html>
