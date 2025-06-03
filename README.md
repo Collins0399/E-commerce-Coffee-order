@@ -1,20 +1,13 @@
-E-commerce Coffee Order
-An e-commerce web application for ordering coffee online. Users can browse coffee items, add them to a cart, and place an order seamlessly.
+☕ E-commerce Coffee Order
+E-commerce Coffee Order is a web application that allows users to order coffee online. Users can browse a selection of coffee items, add them to a cart, and place an order seamlessly.
 
- Tech Stack
-JavaScript – for interactivity and frontend logic
+📌 Description
+An e-commerce platform built for ordering coffee online. The system offers a simple and interactive user experience where customers can view available coffee products, manage a shopping cart, and place orders efficiently.
 
-HTML – to structure the web pages
+🛠️ Tech Stack
+Technology	Description
+JavaScript	Adds interactivity and manages cart behavior on the frontend
+HTML	Structures the web pages and forms
+CSS	Styles the user interface and layout
+PHP	Handles backend logic and processes orders
 
-CSS – for styling the user interface
-
-PHP – to handle server-side processing and order management
-
-Features
-View a list of available coffee products
-
-Add coffee items to a shopping cart
-
-Place an order with customer details
-
-Confirmation of orders via the backend (PHP)
